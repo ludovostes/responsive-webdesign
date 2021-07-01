@@ -4,7 +4,7 @@ background-color: dodgerblue;
 
 #small, #medium, #large {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 4em;
+    font-size: 3em;
 }
 
 p {
@@ -21,7 +21,7 @@ h2 {
     {
         background-color: crimson;
     }
-    #small 
+    #small, #medium, #large
     {
         display: contents;
         width: auto;
@@ -29,7 +29,7 @@ h2 {
     }
     #medium, #large 
     {
-        display: none;
+        /*display: none;*/
     }
 }
 @media only screen and (min-width: 300px) and (max-width: 768px) {
@@ -39,19 +39,21 @@ h2 {
     }
     #medium 
     {
-        display: contents;
-        width: auto;
+        /*display: contents;*/
+        width: 66%;
         font-size: 2.5em;
     }
     #large 
     {
-        display: none;
-        width: auto;
+        /*display: none;*/
+        width: 100%;
+        font-size: 2.5em;
     }
     #small 
     {
-        display: none;
-        width: auto;
+        /*display: none;*/
+        width: 33%;
+        font-size: 2.5em;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -59,22 +61,28 @@ h2 {
     { 
         background-color: dodgerblue;
     }
+
     #large 
     {
-        display: contents;
-        font-size: 3.5em;
+        display: inline-block;
+        width: 30%;
+        margin-left: 2%;
+        /*font-size: 3.5em;*/
         /*width: auto;*/
     }
     #small
     {
-        display: none;
+        display: inline-block;
+        width: 30%;
         /*visibility: hidden;
         display: none;
         width: auto;*/
     }
     #medium
     {
-        display: none;
+        display: inline-block;
+        width: 30%;
+        margin-left: 2%;
         /*visibility: hidden;
         display: none;
         width: auto;*/
